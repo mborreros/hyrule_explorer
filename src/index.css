@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* navigation styling */
+nav {
+  background-color: rgb(51, 63, 72);
+}
+
+.details .card {
+  min-height: 180px;
+}
+
+img.logo {
+  width: 60px;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.entry-name,
+table th,
+table td:not(:last-child) {
+  text-transform: capitalize;
+}
+
+.detail {
+  opacity: 1;
+  transition: .1s ease opacity;
+}
+
+.loading .detail {
+  opacity: 0;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form-select {
+  margin-bottom: 0.5em;
+}
+
+/* checkboxes */
+.img-check label {
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 10px;
+}
+
+.img-check input {
+  display: none;
+}
+
+
+.img-check label:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#checkbox-owned~label:before {
+  top: 0;
+}
+
+.img-check label:active::before {
+  outline: none;
+  border-color: #b5cb8f;
+  box-shadow: 0 0 0 0.25rem rgb(109 146 110 / 25%);
+}
+
+form.disabled .img-check label:active::before {
+  border-color: transparent;
+  box-shadow: none;
+
+}
+
+.img-check .form-check {
+  margin-bottom: 0;
+  padding-left: 0.15em;
+}
+
+.item .item-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.25rem;
+}
+
+/* .details .form form, */
+.details .text-side {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+p.card-text.detail.description {
+  font-style: italic;
+  font-size: 14px;
+  scroll-padding-bottom: 6px;
+}
+
+.btn:hover {
+  color: #fff
+}
+
+#button-clear {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  background: none;
+  border: none;
+}
+
+input#search-input {
+  border-radius: .25em;
+}
+
+.home-tables .card {
+  max-height: 33vh;
+}
+
+.home-tables .table>:not(:first-child) {
+  border-top-width: 1px;
+}
+
+form .alert {
+  padding: 6px 12px;
+  margin-bottom: 0px;
+}
+
+.hyrule .nav-link {
+  color: #6d926e;
+}
+
+.hyrule .btn-primary {
+  background-color: #6d926e;
+  border-color: #6d926e;
+}
+
+.hyrule .btn-primary:hover {
+  background-color: #4c5f4d;
+  border-color: #4c5f4d;
+}
+
+.hyrule .btn-check:active+.btn-primary,
+.hyrule .btn-check:checked+.btn-primary,
+.hyrule .btn-primary.active,
+.hyrule .btn-primary:active,
+.hyrule .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #4c5f4d;
+  border-color: #4c5f4d;
+}
+
+.hyrule .btn-check:focus+.btn-primary,
+.hyrule .btn-primary:focus {
+  background-color: #4c5f4d;
+  border-color: #4c5f4d;
+}
+
+.hyrule .nav-link:focus-visible,
+.hyrule .btn-primary {
+  outline-color: #6d926e;
+}
+
+.hyrule .btn-primary.disabled,
+.hyrule .btn-primary:disabled {
+  background-color: rgba(109, 146, 110, 0.5);
+  border-color: rgba(109, 146, 110, 0.5);
+}
+
+.hyrule .btn-check:active+.btn-primary:focus,
+.hyrule .btn-check:checked+.btn-primary:focus,
+.hyrule .btn-primary.active:focus,
+.hyrule .btn-primary:active:focus,
+.hyrule .show>.btn-primary.dropdown-toggle:focus {
+
+  box-shadow: 0 0 0 0.25rem rgb(109 146 110 / 25%);
+}
+
+.hyrule .form-control:focus,
+.hyrule .btn-check:focus+.btn-primary,
+.hyrule .btn-primary:focus,
+.hyrule .form-select:focus {
+  border-color: #b5cb8f;
+  box-shadow: 0 0 0 0.25rem rgb(109 146 110 / 25%);
+}
+
+.hyrule .nav-link:focus,
+.hyrule .nav-link:hover {
+  color: #4c5f4d;
+}
+
+.hyrule .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #6d926e;
+}
+
+.hyrule .form-check-input:checked {
+  background-color: #6d926e;
+  border-color: #6d926e;
+}
+
+.hyrule .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgb(109 146 110 / 25%);
+}
+
+.hyrule {
+  font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
+}
+
+.hyrule span.fs-4 {
+  font-size: 2.5rem!important;
+}
+
+.hyrule .h1, h1 {
+  font-size: 1.75rem;
+}
